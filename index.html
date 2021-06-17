@@ -6,8 +6,239 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/animate.css">
 </head>
+
 <body>
-    
+    <header class="header wow fadeInUp animated delay-2s">
+        <h1 class="header-log"><img src="./image/logo.png" alt="ロゴ"></h1>
+        <nav class="header-nav">
+            <button type="button" id="js-buttonHamburger" class="c-button p-hamburger" aria-controls="global-nav" aria-expanded="false">
+                <span class="p-hamburger__line">
+                </span>
+            </button>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#">宿泊予約</a></li>
+                <li class="nav-item"><a href="#">観光情報</a></li>
+                <li class="nav-item"><a href="#">よくあるご質問</a></li>
+                <li class="nav-item"><a href="#">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="sp">
+        <ul class="sp-list">
+            <li class="nav-item"><a href="#">宿泊予約</a></li>
+            <li class="nav-item"><a href="#">観光情報</a></li>
+            <li class="nav-item"><a href="#">よくあるご質問</a></li>
+            <li class="nav-item"><a href="#">お問い合わせ</a></li>
+        </ul>
+    </div>
+    <main>
+        <div class="top wow fadeInUp animated delay-2s">
+            <div class="top-title">祇園の中心に佇む<br>京の極楽浄土</div>
+        </div>
+
+        <section class="features wow fadeInUp animated delay-2s">
+            <div class="inner">
+                <h2 class="features-title">本館の特徴</h2>
+                <p class="feature-en">Features</p>
+                <div class="feature-cont">
+                    <ul class="feature-list">
+                        <li class="feature-item">
+                            <img src="./image/feature-item01.png" alt="ホテル">
+                            <div class="feature-text">
+                                <div class="feature-title">京都文化の粋と<br>英国文化の伝統が調和したホテル。
+                                </div>
+                                <p class="feature-show">イングランド北方のスコットランドのアーツ＆クラフトと古都エジン バラをテーマにデザインされています。京都とエジンバラは姉妹都市 であるばかりでなく古い街並や伝統的な生活、文化などヨーロッパと アジアの美しい古都として非常に似ています。デザインは共通の工芸 に関わる文化をテーマに構成しています。</p>
+                                <div class="feature-link">
+                                    <a href="#">お部屋の詳細</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="sp-image"><img src="./image/feature-item02.png" alt="ホテル"></div>
+                            <div class="feature-text">
+                                <div class="feature-title">京都ならではの季節の味覚をみなさまに。 丁寧に作りあげた逸品に舌鼓。
+                                </div>
+                                <p class="feature-show">京都の街並みを思わせるような日本料理「風風堂」、英国の伝統ある 邸宅の書斎がモチーフとしたカフェ「ライブラリー」。極楽亭で過ご す時間をもっとラグジュアリーなひとときに。京都ならではの食材を 使った料理は、今この時しか味わえない逸品。昼下がりにカフェでの んびりと読書してみるのもおすすめ。</p>
+                                <div class="feature-link">
+                                    <a href="#">コース料理の詳細</a>
+                                </div>
+                            </div>
+                            <span class="pc-image"><img src="./image/feature-item02.png" alt="ホテル"></span>
+                        </li>
+                        <li class="feature-item">
+                            <img src="./image/feature-item03.png" alt="ホテル">
+                            <div class="feature-text">
+                                <div class="feature-title">五感を癒す。 天然温泉から美と活力を。
+                                </div>
+                                <p class="feature-show">京の極楽の最上階にある「スパ・ゴクラク」。湧き上がる天然温泉の 恵みで細胞内のバランスを整え新陳代謝を向上させてくれます。大い なる自然を感じながらリラックスすれば、身体の奥から元気が蘇って くるでしょう。京都らしい和のテイストを取り入れた五感を癒すペン トハウススパ。心と体のリフレッシュに最適です。</p>
+                                <div class="feature-link">
+                                    <a href="#">温泉の詳細</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="recommend-plan wow fadeInUp animated delay-2s">
+            <div class="inner">
+                <h2 class="plans-title">おすすめプラン</h2>
+                <p class="plans-en">Recommend Plan</p>
+                <div class="plan-cont">
+                    <ul class="plan-list" id="slider">
+                        <li class="plan-item">
+                            <img src="./image/rec-plan01.png" alt="">
+                            <div class="plan-text">
+                                <p class="plan-title">温泉で湯ったりポカポカプラン＜朝食 選択可＞</p>
+                                <p class="plan-price">お値段：<span>6000円</span> / 人</p>
+                            </div>
+                        </li>
+                        <li class="plan-item">
+                            <img src="./image/rec-plan02.png" alt="">
+                            <div class="plan-text">
+                                <p class="plan-title">【ケーキセット】選べるケーキお飲物 のセット！</p>
+                                <p class="plan-price">お値段：<span>6000円</span> / 人</p>
+                            </div>
+                        </li>
+                        <li class="plan-item">
+                            <img src="./image/rec-plan03.png" alt="">
+                            <div class="plan-text">
+                                <p class="plan-title">バータイム「2DRINKSプラン」選べる ドリンク2杯におつまみが付いたプラン</p>
+                                <p class="plan-price">お値段：<span>6000円</span> / 人</p>
+                            </div>
+                        </li>
+                        <li class="plan-item">
+                            <img src="./image/rec-plan04.png" alt="">
+                            <div class="plan-text">
+                                <p class="plan-title">【リモート宴会プラン】京の極楽から シェフ厳選メニューをご提供！</p>
+                                <p class="plan-price">お値段：<span>6000円</span> / 人</p>
+                            </div>
+                        </li>
+                        <li class="plan-item">
+                            <img src="./image/rec-plan05.png" alt="">
+                            <div class="plan-text">
+                                <p class="plan-title">【数量限定】季節の会席とミニボトル のドリンク付きプラン</p>
+                                <p class="plan-price">お値段：<span>6000円</span> / 人</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="service">
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <img src="./image/service-item01.png" alt="">
+                            <div class="service-text">
+                                <div class="service-title">最低価格保証</div>
+                                <p>極楽亭の公式ホームページでのご宿泊料金 は、どの予約サイトよりも最低価格である ことをお約束いたします。</p>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <img src="./image/service-item02.png" alt="">
+                            <div class="service-text">
+                                <div class="service-title">全客室Wi-Fi無料</div>
+                                <p>ロビー・客室フロアに無線LANアクセスポ イントを設置し、各客室内でもWi-Fi接続 によるインターネットを利用できる環境を 構築しています。</p>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <img src="./image/service-item03.png" alt="">
+                            <div class="service-text">
+                                <div class="service-title">会員限定料金</div>
+                                <p>会員の方は、会員料金でご宿泊いただける ほか、オンラインクーポンなどの限定メニ ューもご利用いただけます。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog wow fadeInUp animated delay-2s">
+            <div class="inner">
+                <h2 class="blog-title">ブログ</h2>
+                <div class="blog-en">Blog</div>
+                <div class="blog-cont">
+                    <ul class="blog-list">
+                        <li class="blog-item">
+                            <div class="blog-tag">お知らせ</div>
+                            <div class="blog-text">2021年4月より、極楽亭に新たに宴会場「風の間」が新設されました。</div>
+                        </li>
+                        <li class="blog-item">
+                            <div class="blog-tag">お知らせ</div>
+                            <div class="blog-text">2021年5月より、極楽亭の別館が開館します！こちらも予約を随時、受付けておりま す。</div>
+                        </li>
+                        <li class="blog-item">
+                            <div class="blog-tag">採用</div>
+                            <div class="blog-text">2021年度の採用募集を開始いたしました。一緒に極楽亭を盛り上げていきませんか？</div>
+                        </li>
+                        <li class="blog-item">
+                            <div class="blog-tag">お知らせ</div>
+                            <div class="blog-text">2021年2月20日、極楽亭の創業50年を迎えました。</div>
+                        </li>
+                        <li class="blog-item">
+                            <div class="blog-tag">イベント</div>
+                            <div class="blog-text">2020年12月25日までクリスマスフェア開催中です！出来立てのお料理を絶景とともに お愉しみいただけます。</div>
+                        </li>
+                    </ul>
+                    <a href="">もっと見る</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq wow fadeInUp animated delay-2s">
+            <div class="inner">
+                <h2 class="faq-title">よくある質問</h2>
+                <p class="faq-en">FAQ</p>
+                <div class="faq-cont">
+                    <ul class="faq-list">
+                        <li class="faq-item">
+                            <div class="que">Q. チェックイン、チェクアウトの時間は何時ですか？</div>
+                            <div class="ans hide">A. チェックインの時間は15:00～17:00です。もし17:00を過ぎるようでしたら、ご一報を入れていただくよう お願いしております。チェックアウトの時間は翌朝10:00でございます。</div>
+                        </li>
+                        <li class="faq-item">
+                            <div class="que">Q. 露天風呂がついたお部屋はありますか？</div>
+                            <div class="ans hide">A. 露天風呂付のお部屋は全部で24室ございます。</div>
+                        </li>
+                        <li class="faq-item">
+                            <div class="que">Q. ペットを連れて行きたいのですが可能ですか？</div>
+                            <div class="ans hide">A. ペット同伴のご宿泊はお断りさせて頂いております。お車で5分ほどの場所に、一時預かりを行っているペット ハウスがございますのでそちらのご利用をお願い致します。</div>
+                        </li>
+                        <li class="faq-item">
+                            <div class="que">Q. キャスター付きのバッグで行っても大丈夫ですか？</div>
+                            <div class="ans hide">A. 全館畳敷きの為、キャスター付きバッグのご利用をご遠慮頂いております。お荷物は、係りの者がお部屋までお 持ち致しますのでご協力をお願い致します。</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer wow fadeInUp animated delay-2s">
+        <div class="footer-cont">
+            <ul class="footer-list">
+                <li class="footer-item">利用規約</li>
+                <li class="footer-item">プライバシーポリシー</li>
+                <li class="footer-item">個人商取引法に基づく表記</li>
+                <li class="footer-item">お問い合わせ</li>
+            </ul>
+            <div class="footer-log">
+                <img src="./image/logo.png" alt="">
+            </div>
+            <p class="copy">Copyright (c) 2021 極楽亭 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
